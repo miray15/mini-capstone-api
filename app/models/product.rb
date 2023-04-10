@@ -1,5 +1,10 @@
 class Product < ApplicationRecord
 
+  def supplier 
+    Supplier.where(id: supplier_id)
+  end 
+  
+  
   validates :name, presence: true 
   validates :name, length: {minimum: 10}
   
