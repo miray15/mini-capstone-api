@@ -1,12 +1,10 @@
 class Product < ApplicationRecord
 
-  def supplier 
-    Supplier.where(id: supplier_id)
-  end 
+  belongs to :supplier 
   
   
-  validates :name, presence: true 
-  validates :name, length: {minimum: 10}
+  # validates :name, presence: true 
+  # validates :name, length: {minimum: 10}
   
   def is_discounted?
     if
