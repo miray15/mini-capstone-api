@@ -1,7 +1,7 @@
 class Product < ApplicationRecord
 
-  belongs to :supplier 
-  
+  belongs_to :supplier 
+  has_many :images 
   
   # validates :name, presence: true 
   # validates :name, length: {minimum: 10}
