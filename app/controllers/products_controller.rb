@@ -1,5 +1,11 @@
 class ProductsController < ApplicationController
 
+
+  def index
+      @products = Product.all
+      render :index
+  end 
+
   def create 
    if @product = Product.create(
       name: params[:name], 

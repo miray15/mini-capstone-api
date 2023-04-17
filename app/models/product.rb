@@ -14,17 +14,9 @@ class Product < ApplicationRecord
       p falsey 
     end
   end 
-  
-  def tax 
-    price = price * 0.09
-    p tax 
-  end 
-
-  def total 
-    total = price + tax 
+ 
 
   # • Create a model method called total which will return the sum of the price + tax.
   end 
 
 
-end
