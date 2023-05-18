@@ -4,6 +4,9 @@ class Product < ApplicationRecord
   belongs_to :supplier
   has_many :category_products
   has_many :categories, through: :category_products
+  belongs_to :users
+  has_many :carted_products
+  belongs_to :order
   
   # validates :name, presence: true 
   # validates :name, length: {minimum: 10}
