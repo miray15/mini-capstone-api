@@ -1,12 +1,12 @@
 class Product < ApplicationRecord
 
   has_many :images
-  belongs_to :supplier
+  # belongs_to :supplier
   has_many :category_products
   has_many :categories, through: :category_products
-  belongs_to :users
+  # belongs_to :user
   has_many :carted_products
-  belongs_to :order
+  # belongs_to :order
   
   # validates :name, presence: true 
   # validates :name, length: {minimum: 10}
